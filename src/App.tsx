@@ -2,10 +2,11 @@ import './App.css';
 import styled from 'styled-components';
 import { Header } from './layout/header/Header';
 import { Main } from './layout/sections/main/Main';
-import { About } from './layout/sections/About';
-import { TechStack } from './layout/sections/TechStack';
-import { Projects } from './layout/sections/Projects';
-import { Contacts } from './layout/sections/Contacts';
+import { About } from './layout/sections/about/About';
+import { TechStack } from './layout/sections/techStack/TechStack';
+import { Projects } from './layout/sections/projects/Projects';
+import { Contacts } from './layout/sections/contacts/Contacts';
+import { Footer } from './layout/footer/Footer';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <TechStack/>
             <Projects/>
             <Contacts/>
+            <Footer/>
         </div>
     );
 }

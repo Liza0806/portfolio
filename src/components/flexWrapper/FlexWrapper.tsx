@@ -5,7 +5,8 @@ type FlexWrapperPropsType = {
     justify?: string
     align?: string
     wrap?: string
-    gap?: string
+    rowG?: string
+    columnG?: string
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -14,5 +15,6 @@ flex-direction: ${props=>props.direction || "row"};
 justify-content:  ${props=>props.justify || "flex-start"};
 align-items:  ${props=>props.align  || "stretch"};
 flex-wrap:  ${props=>props.wrap || "nowrap"};
-gap: ${props=>props.gap || "0"};
+row-gap: ${props=>props.rowG || "0"};
+column-gap: ${props=>props.columnG || "0"};
 `

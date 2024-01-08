@@ -6,6 +6,5 @@ export function Logo () {
 <a href="">
 <Icon iconId="github" fill="green"/>
 </a>
-
     )
 }
