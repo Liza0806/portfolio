@@ -4,9 +4,11 @@ import styled from "styled-components";
 import { Menu } from "../../components/menu/Menu";
 import { Icon } from "../../components/icon/Icon";
 import { IconSet } from "../../components/iconSet/IconSet";
+import { Container } from "../../components/container/Container.styled";
 
 export function Header() {
   return (
+    <Container>
     <HeaderStyled>
       <NavStyled>
         <Logo />
@@ -14,6 +16,7 @@ export function Header() {
         <IconSet fill="#666666"/>
       </NavStyled>
     </HeaderStyled>
+    </Container>
   );
 }
 

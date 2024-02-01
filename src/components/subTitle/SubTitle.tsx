@@ -20,5 +20,5 @@ line-height: ${props => props.lineHeight || "52px"};
 letter-spacing: ${props => props.letter || "-0.4px"};
 color: ${props => props.color || "#42446E"};
 text-align:${props => props.textAlign || "center"} ;
-margin-bottom:${props => props.margin || "38px"} ;
+margin:${props => props.margin || "38px 0"} ;
 `

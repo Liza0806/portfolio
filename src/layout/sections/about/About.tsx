@@ -1,18 +1,24 @@
 import React from "react";
 import { WorkAndStudyPlace } from "../../../components/workAndStudyPlace/WorkAndStudyPlace";
 import { SubTitleStyled } from "../../../components/subTitle/SubTitle";
+import { Container } from "../../../components/container/Container.styled";
+import { SectionAbout } from "../../../components/sectionAbout/SectionAbout.styled";
+import { MyTheme } from "../../../styles/Theme.styled";
+import { AboutText } from "./About.styled";
+import { SquareAnimation } from "../../../components/animations/SquareAnimation.styled";
 
 export function About() {
   return (
-    <section>
-      <SubTitleStyled>About Me</SubTitleStyled>
-      <p>
+    <Container>
+    <SectionAbout>
+      <SubTitleStyled textAlign="start">About Me</SubTitleStyled>
+      <AboutText>
         The Generator App is an online tool that helps you to export ready-made
         templates ready to work as your future website. It helps you to combine
         slides, panels and other components and export it as a set of static
         files: HTML/CSS/JS.
-      </p>
-      <SubTitleStyled>Work Experience</SubTitleStyled>
+      </AboutText>
+      <SubTitleStyled textAlign="start">Work Experience</SubTitleStyled>
 
       <ul>
         <WorkAndStudyPlace
@@ -39,7 +45,7 @@ export function About() {
           status="Internship"
         />
       </ul>
-      <SubTitleStyled>Education</SubTitleStyled>
+      <SubTitleStyled textAlign="start">Education</SubTitleStyled>
       <ul>
         <WorkAndStudyPlace
           position="Bachelor in Electronics & Communication"
@@ -49,6 +55,8 @@ export function About() {
           status="Full Time"
         />
       </ul>
-    </section>
+      <SquareAnimation/>
+    </SectionAbout>
+    </Container>
   );
 }

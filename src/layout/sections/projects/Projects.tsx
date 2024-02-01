@@ -9,9 +9,11 @@ import proj3 from "../../../assets/images/proj3.webp";
 import proj4 from "../../../assets/images/proj4.webp";
 import proj5 from "../../../assets/images/proj5.webp";
 import proj6 from "../../../assets/images/proj6.webp";
+import { Container } from "../../../components/container/Container.styled";
 
 export function Projects() {
   return (
+    <Container>
     <section>
       <SubTitleStyled
         size="48px"
@@ -69,6 +71,7 @@ export function Projects() {
         />
       </FlexWrapper>
     </section>
+    </Container>
   );
 }
 const ProjectSectionDscr = styled.p`

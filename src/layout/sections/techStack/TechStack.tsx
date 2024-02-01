@@ -3,6 +3,7 @@ import { SubTitleStyled } from "../../../components/subTitle/SubTitle";
 import { Icon } from "../../../components/icon/Icon";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/flexWrapper/FlexWrapper";
+import { Container } from "../../../components/container/Container.styled";
 
 export function TechStack() {
   const iconCommonProps = {
@@ -26,6 +27,7 @@ export function TechStack() {
     "github1",
   ];
   return (
+    <Container>
     <section>
       <SubTitleStyled size="48px" lineHeight="26px" letter="0" margin="49px">
         My Tech Stack
@@ -45,6 +47,7 @@ export function TechStack() {
         ))}
       </FlexWrapper>
     </section>
+    </Container>
   );
 }
 
