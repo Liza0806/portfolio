@@ -10,6 +10,7 @@ import proj4 from "../../../assets/images/proj4.webp";
 import proj5 from "../../../assets/images/proj5.webp";
 import proj6 from "../../../assets/images/proj6.webp";
 import { Container } from "../../../components/container/Container.styled";
+import { DescrSubTitile } from "../../../components/descrSubTitle.styled.tsx/DescrSubTitle.styled";
 
 export function Projects() {
   return (
@@ -24,7 +25,7 @@ export function Projects() {
       >
         Projects
       </SubTitleStyled>
-      <ProjectSectionDscr>Things I’ve built so far</ProjectSectionDscr>
+      <DescrSubTitile>Things I’ve built so far</DescrSubTitile>
       <FlexWrapper
         wrap="wrap"
         rowG="34px"
@@ -74,11 +75,3 @@ export function Projects() {
     </Container>
   );
 }
-const ProjectSectionDscr = styled.p`
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 26px;
-  text-align: center;
-  color: #666666;
-`;

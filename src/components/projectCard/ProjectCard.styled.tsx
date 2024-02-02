@@ -23,6 +23,7 @@ export const CardDscrStyled = styled.p`
   font-size: 18px;
   line-height: 26px;
   color: #666666;
+  margin-bottom: 12px;
 `;
 export const CardTitleStyled = styled.h3`
   font-family: "Poppins";
@@ -31,6 +32,7 @@ export const CardTitleStyled = styled.h3`
   line-height: 26px;
   text-align: center;
   color: #000000;
+  margin-bottom: 17px;
 `;
 export const ParagraphStyled = styled.p`
   font-family: "Poppins";
@@ -38,6 +40,7 @@ export const ParagraphStyled = styled.p`
   font-size: 14px;
   line-height: 26px;
   color: #666666;
+  margin-bottom: 20px;
 
   span {
     font-weight: 400;

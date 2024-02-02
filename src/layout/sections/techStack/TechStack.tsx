@@ -4,6 +4,8 @@ import { Icon } from "../../../components/icon/Icon";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/flexWrapper/FlexWrapper";
 import { Container } from "../../../components/container/Container.styled";
+import { MyTheme } from "../../../styles/Theme.styled";
+import { DescrSubTitile } from "../../../components/descrSubTitle.styled.tsx/DescrSubTitle.styled";
 
 export function TechStack() {
   const iconCommonProps = {
@@ -33,7 +35,7 @@ export function TechStack() {
         My Tech Stack
       </SubTitleStyled>
 
-      <p> Technologies I’ve been working with recently</p>
+      <DescrSubTitile> Technologies I’ve been working with recently</DescrSubTitile>
       <FlexWrapper as = {"ul"}  
       justify= "center" 
       align="center" 

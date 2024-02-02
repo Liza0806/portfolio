@@ -12,9 +12,13 @@ export const MyTheme = {
       workAndStudyStatus: "#018C0F",
       workAndStudyStatusBg: "#D7FFE0",
       workAndStudyStatusBorder: "#EBEAED",
+      gradient: "linear-gradient(#13b0f5, #e70faa)",
+      gradientStart: "#13b0f5",
+      gradientEnd: "#e70faa"
 
 
     },
+ 
 
     dark: {
       lightContent: "#a7a7a7",

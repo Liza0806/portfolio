@@ -1,8 +1,11 @@
 import styled from "styled-components";
+import { MyTheme } from "../../styles/Theme.styled";
+
 type SquareAnimationPropsType = {
     index: number
 }
 export function SquareAnimation() {
+    
     return (
         
             <SquareWrapper>
@@ -43,8 +46,8 @@ export const Square = styled.div<SquareAnimationPropsType>`
     height: 100%;
     position: absolute;
     border: 1px solid;
-    border-image: linear-gradient(#13b0f5, #e70faa) 1;
+    border-image: linear-gradient(#a7a7a7, #a7a7a7 ) 1;
     transform: rotate(${props => props.index * 18}deg); 
-    
  
 `;
+// border-image: linear-gradient(#13b0f5, #e70faa) 1;

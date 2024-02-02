@@ -46,5 +46,7 @@ export function IconSet (props: IconSetPropsType){
 
 const StyledIconList = styled.ul`
     display: flex;
+    gap: 20px;
+    margin-left: 50px;
 
 `
