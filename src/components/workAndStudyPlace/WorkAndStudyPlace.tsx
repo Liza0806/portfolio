@@ -50,6 +50,7 @@ flex-direction: column;
 align-items: center;
 justify-content: space-between;
 border-bottom: 2px solid ${MyTheme.colors.light.workAndStudyStatusBorder};
+margin-bottom: 30px;
 
 h3 {
     font-weight: 400;
@@ -72,6 +73,7 @@ span {
 display: flex;
 align-items:stretch;
 justify-content: space-between;
+margin-bottom: 24px;
 }
 `
 const StyledStatus = styled.div`
