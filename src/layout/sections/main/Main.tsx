@@ -13,7 +13,7 @@ export function Main() {
     <section >  
       <Container>
       <h1 hidden>Frontend developer resume</h1>
-      <FlexWrapper justify="space-around" align="center" >
+      <FlexWrapper justify="space-around" align="center" margin="20vh auto" >
         <HelloText>
           Hi 👋,
           <br />
@@ -48,19 +48,21 @@ ${font({ weight: 700, Fmax:58, Fmin: 26, lineHeight: 1.2})}
 `
 
 const MyPhotoStyled = styled.img`
-  width: 94%;
+  width: 95%;
   clip-path: circle(50% at 50% 50%);
+  margin: 10px;
 `;
 const PhotoContainer = styled.div`
   max-width: 358px;
   max-height: 358px;
   width: 100%;
-  height:100%;
+  height: 100%;
   background-image: linear-gradient(#13b0f5, #e70faa);
   clip-path: circle(50% at 50% 50%);
   display: flex;
   align-items: center;
   justify-content: center;
+
 `;
 const StSection = styled.div`
 background-color: #cfe7f1;

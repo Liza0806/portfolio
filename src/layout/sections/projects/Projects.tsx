@@ -17,9 +17,9 @@ export function Projects() {
   <section>
     <Container>
       <SubTitleStyled
-        size="48px"
-        lineHeight="26px"
-        letter="0"
+       Fmax={48} 
+       Fmin={34} 
+       lineHeight={0.9}
         textAlign="center"
         margin="49px"
       >

@@ -12,14 +12,14 @@ export function About() {
      <Container>
     <SectionAbout>
      
-      <SubTitleStyled textAlign="start">About Me</SubTitleStyled>
+      <SubTitleStyled Fmax={48} Fmin={34} lineHeight={0.9} textAlign="start">About Me</SubTitleStyled>
       <AboutText>
         The Generator App is an online tool that helps you to export ready-made
         templates ready to work as your future website. It helps you to combine
         slides, panels and other components and export it as a set of static
         files: HTML/CSS/JS.
       </AboutText>
-      <SubTitleStyled textAlign="start">Work Experience</SubTitleStyled>
+      <SubTitleStyled Fmax={48} Fmin={34} lineHeight={0.9} textAlign="start">Work Experience</SubTitleStyled>
 
       <ul>
         <WorkAndStudyPlace
@@ -46,7 +46,7 @@ export function About() {
           status="Internship"
         />
       </ul>
-      <SubTitleStyled textAlign="start">Education</SubTitleStyled>
+      <SubTitleStyled Fmax={48} Fmin={34} lineHeight={0.9} textAlign="start">Education</SubTitleStyled>
       <ul>
         <WorkAndStudyPlace
           position="Bachelor in Electronics & Communication"

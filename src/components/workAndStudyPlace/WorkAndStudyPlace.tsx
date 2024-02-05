@@ -2,6 +2,7 @@ import React from "react";
 import { Icon } from "../icon/Icon";
 import styled from "styled-components";
 import { MyTheme } from "../../styles/Theme.styled";
+import { font } from "../../styles/Common";
 
 type WorkAndStudyPlacePropsType = {
     position: string
@@ -19,7 +20,7 @@ export function WorkAndStudyPlace (props: WorkAndStudyPlacePropsType){
 
 <StyledStatus>{props.status}</StyledStatus>
 </div>
-<div>
+<WorkPlaceContainer>
 <span>
 <Icon iconId="building"
 width="16"
@@ -38,7 +39,7 @@ width="16"
 height="12"
 viewBox="0 0 12 12"/>
 {props.time}</span> 
-</div>
+</WorkPlaceContainer>
 </StyledWorkAndStudyPlace>
     )
 }
@@ -53,9 +54,8 @@ border-bottom: 2px solid ${MyTheme.colors.light.workAndStudyStatusBorder};
 margin-bottom: 30px;
 
 h3 {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.2;
+    
+${font({ weight: 400, Fmax:20, Fmin: 16, lineHeight: 1.2})};
     color: ${MyTheme.colors.light.lightContent};
 }
 span {
@@ -74,7 +74,15 @@ display: flex;
 align-items:stretch;
 justify-content: space-between;
 margin-bottom: 24px;
+
 }
+`
+const WorkPlaceContainer = styled.div`
+
+    display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+
 `
 const StyledStatus = styled.div`
 height: 30px;
@@ -87,4 +95,5 @@ font-size: 9px;
 line-height: 2.89;
 padding: 1px 22px;
 border-radius: 12px;
+white-space: nowrap;
 `

@@ -32,7 +32,7 @@ export function TechStack() {
     
     <section>
       <Container>
-      <SubTitleStyled size="48px" lineHeight="26px" letter="0" margin="49px">
+      <SubTitleStyled Fmax={48} Fmin={34} lineHeight={0.9} margin="49px">
         My Tech Stack
       </SubTitleStyled>
 

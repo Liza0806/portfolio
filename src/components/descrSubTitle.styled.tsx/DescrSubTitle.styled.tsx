@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { MyTheme } from "../../styles/Theme.styled";
+import { font } from "../../styles/Common";
 
 export const DescrSubTitile = styled.p`
-  font-size:400;
-  font-size: 32px;
-  line-height: 0.81;
+${font({ weight: 400, Fmax:32, Fmin: 20, lineHeight: 1})}
   color: ${MyTheme.colors.light.lightContent};
   display: flex;
  justify-content: center;
+ text-align: center;
   margin-bottom: 110px;
 `
