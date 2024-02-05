@@ -9,8 +9,9 @@ import { SquareAnimation } from "../../../components/animations/SquareAnimation.
 
 export function About() {
   return (
-    <Container>
+     <Container>
     <SectionAbout>
+     
       <SubTitleStyled textAlign="start">About Me</SubTitleStyled>
       <AboutText>
         The Generator App is an online tool that helps you to export ready-made
@@ -56,6 +57,7 @@ export function About() {
         />
       </ul>
       <SquareAnimation/>
+     
     </SectionAbout>
     </Container>
   );

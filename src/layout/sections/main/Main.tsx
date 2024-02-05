@@ -8,10 +8,11 @@ import { MyTheme } from "../../../styles/Theme.styled";
 
 export function Main() {
   return (
-    <Container>
-    <section >
+ 
+    <section >  
+      <Container>
       <h1 hidden>Frontend developer resume</h1>
-      <FlexWrapper justify="space-around" margin="200px 0">
+      <FlexWrapper justify="space-around" align="center" >
         <HelloText>
           Hi 👋,
           <br />
@@ -24,8 +25,9 @@ export function Main() {
           <MyPhotoStyled src={MainPhotoPath} alt="My photo"></MyPhotoStyled>
         </PhotoContainer>
       </FlexWrapper>
+      </Container>
     </section>
-    </Container>
+    
   );
 }
 

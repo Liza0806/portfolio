@@ -4,16 +4,20 @@ import { Icon } from "../icon/Icon";
 type IconSetPropsType = {
     fill?: string
     stroke?: string
+    width?: string
+    height?: string
+    margin?: string
 
 }
 
 export function IconSet (props: IconSetPropsType){
     return (
-        <StyledIconList>
+        <StyledIconList margin={props.margin}>
           <li><a href="">
           <Icon 
           iconId="twitter" 
-          width="30" height="30" 
+          width={props.width || "30"}  
+          height={props.height || "30"}
           viewBox="0 0 32 32"
           fill={props.fill} 
           />
@@ -22,8 +26,8 @@ export function IconSet (props: IconSetPropsType){
           <li><a href="">
           <Icon
             iconId="github"
-            width="30"
-            height="30"
+            width={props.width || "30"} 
+            height={props.height || "30"}
             viewBox="0 0 88 88"
             fill={props.fill} 
           />
@@ -32,7 +36,8 @@ export function IconSet (props: IconSetPropsType){
           <li><a href="">
           <Icon 
           iconId="linkedin" 
-          width="30" height="30" 
+          width={props.width || "30"} 
+          height={props.height || "30"}
           viewBox="0 0 30 30" 
           fill={props.fill} 
           />
@@ -44,9 +49,9 @@ export function IconSet (props: IconSetPropsType){
     )
 }
 
-const StyledIconList = styled.ul`
+const StyledIconList = styled.ul<IconSetPropsType>`
     display: flex;
     gap: 20px;
-    margin-left: 50px;
+   margin-left: ${(props)=> props.margin}
 
 `

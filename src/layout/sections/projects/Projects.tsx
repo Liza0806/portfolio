@@ -13,9 +13,9 @@ import { Container } from "../../../components/container/Container.styled";
 import { DescrSubTitile } from "../../../components/descrSubTitle.styled.tsx/DescrSubTitle.styled";
 
 export function Projects() {
-  return (
+  return (  
+  <section>
     <Container>
-    <section>
       <SubTitleStyled
         size="48px"
         lineHeight="26px"
@@ -70,8 +70,9 @@ export function Projects() {
           description="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
           technologies="HTML , JavaScript, SASS, React"
         />
-      </FlexWrapper>
+      </FlexWrapper> 
+      </Container>
     </section>
-    </Container>
+   
   );
 }

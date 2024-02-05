@@ -50,7 +50,11 @@ h2 {
 h3 {
  // border: 2px solid #f5f5f5 ; 
 }
+button {
+  border: none;
+}
 `
+
 
 
 ;

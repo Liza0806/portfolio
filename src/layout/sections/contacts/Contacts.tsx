@@ -6,14 +6,14 @@ import styled from "styled-components";
 
 export function Contacts() {
   return (
-    <Container>
-    <ContactsSection>
+   
+    <ContactsSection> 
       <SubTitleStyled size="58px" lineHeight="70px" letter="-1px" margin="9px">
         For any questions please mail me:{" "}
         <SpanForAccentStyled>hi@pavanmg.in</SpanForAccentStyled>
       </SubTitleStyled>
     </ContactsSection>
-    </Container>
+   
   );
 }
 

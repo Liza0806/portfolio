@@ -29,8 +29,9 @@ export function TechStack() {
     "github1",
   ];
   return (
-    <Container>
+    
     <section>
+      <Container>
       <SubTitleStyled size="48px" lineHeight="26px" letter="0" margin="49px">
         My Tech Stack
       </SubTitleStyled>
@@ -47,9 +48,9 @@ export function TechStack() {
             <Icon iconId={iconId} {...iconCommonProps} />
           </li>
         ))}
-      </FlexWrapper>
+      </FlexWrapper> </Container>
     </section>
-    </Container>
+   
   );
 }
 
