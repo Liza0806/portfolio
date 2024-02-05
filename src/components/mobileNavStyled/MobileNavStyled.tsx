@@ -7,10 +7,10 @@ import { MyTheme } from "../../styles/Theme.styled";
 export function MobileNavStyled() {
     return ( 
     <>
-    <BurgerBtn isOpen={true}>
+    <BurgerBtn isOpen={false}>
         <span></span>
       </BurgerBtn>    
-        <MobileNav isOpen={true}>
+        <MobileNav isOpen={false}>
       
           <Menu 
           margin="0 auto" 

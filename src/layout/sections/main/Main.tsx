@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { font } from "../../../styles/Common";
 
 import MainPhotoPath from "../../../assets/images/alterEgo.webp";
 import { FlexWrapper } from "../../../components/flexWrapper/FlexWrapper";
@@ -40,9 +41,8 @@ export const SpanForAccentStyled = styled.span`
   font-weight: bold;
 `;
 export const HelloText = styled.p`
-  font-weight: 700;
-  font-size: 58px;
-  line-height: 1.21;
+${font({ weight: 700, Fmax:58, Fmin: 26, lineHeight: 1.2})}
+
   color: ${MyTheme.colors.light.colorsHeading}
 
 `
