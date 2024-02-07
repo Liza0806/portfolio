@@ -14,7 +14,7 @@ export function IconSet (props: IconSetPropsType){
     return (
         <StyledIconList margin={props.margin}>
           <li><a href="">
-          <Icon 
+          <Icon
           iconId="twitter" 
           width={props.width || "30"}  
           height={props.height || "30"}
@@ -52,6 +52,6 @@ export function IconSet (props: IconSetPropsType){
 const StyledIconList = styled.ul<IconSetPropsType>`
     display: flex;
     gap: 20px;
-   margin-left: ${(props)=> props.margin}
+    margin-left: ${(props)=> props.margin}
 
 `

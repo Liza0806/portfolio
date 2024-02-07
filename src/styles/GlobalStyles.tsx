@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 body {
+  min-width: 360px;
     margin: 0;
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -53,10 +54,6 @@ h3 {
 button {
   border: none;
 }
-`
-
-
-
-;
+`;
 
 export default GlobalStyle;

@@ -1,7 +1,6 @@
 import React from "react";
 import { SubTitleStyled } from "../../../components/subTitle/SubTitle";
 import { ProjectCard } from "../../../components/projectCard/ProjectCard";
-import styled from "styled-components";
 import { FlexWrapper } from "../../../components/flexWrapper/FlexWrapper";
 import proj1 from "../../../assets/images/proj1.webp";
 import proj2 from "../../../assets/images/proj2.webp";

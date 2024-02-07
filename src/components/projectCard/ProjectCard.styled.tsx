@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const ProjectCardStyled = styled.div`
   max-width: 375px;
   width: 100%;
@@ -15,6 +16,10 @@ export const ProjectCardStyled = styled.div`
   }
   > div {
     padding: 30px 30px 25px 30px;
+  }
+  @media screen and (max-width: 876px) {
+max-width: 500px;
+  width: 100%;
   }
 `;
 export const CardDscrStyled = styled.p`

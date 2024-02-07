@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { MyTheme } from "../../styles/Theme.styled";
+import { MenuStyled } from "./Menu_Styled";
 
 
-type MenuPropsType = {
+export type MenuPropsType = {
 fontFamily?: string
 weight?: number
 fontSize?: string
@@ -11,11 +12,15 @@ lineH?: number
 color?: string
 margin?: string
 direction?: string
+wrap?: string
+gap?: string
+justify?: string
 }
+
 
 export function Menu(props: MenuPropsType) {
   return (
-    <MenuStyled 
+    <MenuStyled
     margin={props.margin}
     fontFamily={props.fontFamily}
     fontSize={props.fontSize}
@@ -23,6 +28,7 @@ export function Menu(props: MenuPropsType) {
     lineH={props.lineH}
     color={props.color}
     direction={props.direction}
+    justify={props.justify}
 
     >
       <li>
@@ -43,28 +49,3 @@ export function Menu(props: MenuPropsType) {
     </MenuStyled>
   );
 }
-
-const MenuStyled = styled.ul<MenuPropsType>`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: ${(props)=> props.direction || "row"};
-  padding: 0;
-  max-width: 610px;
-  width: 100%;
-  margin: ${(props) => props.margin || "auto"};
-  a {
-    text-decoration: none;
-    font-family: ${(props) => props.fontFamily || "DM Sans"};
-    font-weight:  ${(props) => props.weight || 500 };
-    font-size:  ${(props) => props.fontSize || "20px"};
-    line-height:  ${(props) => props.lineH || 1.3};
-    color:  ${(props) => props.color || `${MyTheme.colors.light.lightContent}`};
-    
-  }
-
-  li {
-    list-style: none;
-
-  }
-`;

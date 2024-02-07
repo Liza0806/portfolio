@@ -10,6 +10,7 @@ type IconPropsType = {
     stroke?: string
 }
 
+
 export function Icon (props: IconPropsType) {
     return (
         <svg 

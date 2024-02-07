@@ -1,10 +1,8 @@
 import React from "react";
 import { SubTitleStyled } from "../../../components/subTitle/SubTitle";
 import { Icon } from "../../../components/icon/Icon";
-import styled from "styled-components";
 import { FlexWrapper } from "../../../components/flexWrapper/FlexWrapper";
 import { Container } from "../../../components/container/Container.styled";
-import { MyTheme } from "../../../styles/Theme.styled";
 import { DescrSubTitile } from "../../../components/descrSubTitle.styled.tsx/DescrSubTitle.styled";
 
 export function TechStack() {
