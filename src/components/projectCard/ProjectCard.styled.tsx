@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const ProjectCardStyled = styled.div`
   max-width: 375px;
   width: 100%;
@@ -18,8 +17,8 @@ export const ProjectCardStyled = styled.div`
     padding: 30px 30px 25px 30px;
   }
   @media screen and (max-width: 876px) {
-max-width: 500px;
-  width: 100%;
+    max-width: 500px;
+    width: 100%;
   }
 `;
 export const CardDscrStyled = styled.p`
@@ -59,4 +58,10 @@ export const ProjectLinkStyled = styled.a`
   font-size: 16px;
   line-height: 26px;
   color: #000000;
+  text-decoration: underline;
+`;
+export const LinkWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
 `;

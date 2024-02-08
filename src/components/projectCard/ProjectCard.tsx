@@ -7,7 +7,9 @@ import {
   CardDscrStyled,
   ParagraphStyled,
   ProjectLinkStyled,
+  LinkWrapper,
 } from "./ProjectCard.styled";
+import styled from "styled-components";
 
 type ProjectCardPropsType = {
   photo?: string;
@@ -30,7 +32,7 @@ export function ProjectCard(props: ProjectCardPropsType) {
         </ParagraphStyled>
 
         <FlexWrapper justify="space-around">
-          <div>
+          <LinkWrapper>
             <Icon
               iconId="chain"
               stroke="#000"
@@ -39,15 +41,15 @@ export function ProjectCard(props: ProjectCardPropsType) {
               viewBox="0 0 20 20"
             />
             <ProjectLinkStyled href="#">Live Preview</ProjectLinkStyled>
-          </div>
-          <div>
+          </LinkWrapper>
+          <LinkWrapper>
             <Icon 
               iconId="github" 
               fill="#000" 
               width="20" 
               height="20" />
             <ProjectLinkStyled href="#">View Code</ProjectLinkStyled>
-          </div>
+          </LinkWrapper>
         </FlexWrapper>
       </div>
     </ProjectCardStyled>

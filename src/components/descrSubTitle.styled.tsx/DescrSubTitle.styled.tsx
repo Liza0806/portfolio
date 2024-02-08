@@ -9,4 +9,7 @@ ${font({ weight: 400, Fmax:32, Fmin: 20, lineHeight: 1})}
  justify-content: center;
  text-align: center;
   margin-bottom: 110px;
+  @media ${MyTheme.media.tablet} {
+    margin-bottom: 40px;
+  }
 `

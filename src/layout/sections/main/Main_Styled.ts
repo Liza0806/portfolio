@@ -13,7 +13,7 @@ export const PhotoContainer = styled.div`
   max-width: 358px;
   max-height: 358px;
   width: 100%;
- 
+  flex-shrink: 2;
   background-image: linear-gradient(#13b0f5, #e70faa);
   clip-path: circle(50% at 50% 50%);
   display: flex;

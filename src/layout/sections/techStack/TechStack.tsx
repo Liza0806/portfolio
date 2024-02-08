@@ -4,6 +4,8 @@ import { Icon } from "../../../components/icon/Icon";
 import { FlexWrapper } from "../../../components/flexWrapper/FlexWrapper";
 import { Container } from "../../../components/container/Container.styled";
 import { DescrSubTitile } from "../../../components/descrSubTitle.styled.tsx/DescrSubTitle.styled";
+import styled from "styled-components";
+import { MyTheme } from "../../../styles/Theme.styled";
 
 export function TechStack() {
   const iconCommonProps = {
@@ -28,7 +30,7 @@ export function TechStack() {
   ];
   return (
     
-    <section>
+    <SectionTechStackStyled>
       <Container>
       <SubTitleStyled Fmax={48} Fmin={34} lineHeight={0.9} margin="49px">
         My Tech Stack
@@ -47,10 +49,19 @@ export function TechStack() {
           </li>
         ))}
       </FlexWrapper> </Container>
-    </section>
+    </SectionTechStackStyled>
    
   );
 }
+const SectionTechStackStyled = styled.section`
+  @media ${MyTheme.media.tablet} {
+
+    ${FlexWrapper}{
+column-gap: 46px;
+row-gap: 52px;
+}
+  }
+`
 
 
 
