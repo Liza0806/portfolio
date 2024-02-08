@@ -2,14 +2,21 @@ import styled, { css } from "styled-components";
 import { IconSet } from "../iconSet/IconSet";
 import { Menu } from "../menu/Menu";
 import { BurgerBtn, MobileNav } from "./MobileNavStyled_Styled";
+import { useState } from "react";
 
 export function MobileNavStyled() {
+const [ menuIsOpen, setmenuIsOpen ] = useState(false)
+const onBurgerBtnClick = () => {
+  setmenuIsOpen(!menuIsOpen)
+}
+
+
     return ( 
     <>
-    <BurgerBtn isOpen={false}>
+    <BurgerBtn isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
         <span></span>
       </BurgerBtn>    
-        <MobileNav isOpen={false}>
+        <MobileNav isOpen={menuIsOpen}>
       
           <Menu 
           margin="0 auto" 
