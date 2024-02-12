@@ -55,6 +55,7 @@ export const BurgerBtn = styled.button<{ isOpen: boolean }>`
       css<{ isOpen: boolean }>`
         background-color: rgba(255, 255, 255, 0);
       `};
+      
     &::before {
       content: "";
       display: block;
