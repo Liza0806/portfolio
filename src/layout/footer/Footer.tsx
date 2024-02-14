@@ -4,7 +4,7 @@ import { IconSet } from "../../components/iconSet/IconSet";
 import { Menu } from "../../components/menu/Menu";
 import { Container } from "../../components/container/Container.styled";
 import { MyTheme } from "../../styles/Theme.styled";
-import { HrStyled, StyledFooter } from "./Footer_Styled";
+import { HrStyled, StyledFooter, StyledSmall } from "./Footer_Styled";
 
 export function Footer() {
   return (
@@ -31,7 +31,7 @@ export function Footer() {
           columnG="20px"
           rowG="20px"
         >
-          <Menu margin="0 auto 0 0" justify="space-between" />
+          <Menu margin="0 auto 0 0" justify="space-between" fontSize="18px" />
           <small>
             Designed and built by Pavan MG with{" "}
             <SpanForAccentStyled>Love & Coffee</SpanForAccentStyled>{" "}

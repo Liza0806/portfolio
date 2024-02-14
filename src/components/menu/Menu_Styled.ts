@@ -4,9 +4,9 @@ import { MyTheme } from "../../styles/Theme.styled";
 
 export const MenuStyled = styled.ul<MenuPropsType>`
   display: flex;
-  justify-content:  ${(props)=> props.justify || "space-between"};
+  justify-content:  ${(props) => props.justify || "space-between"};
   align-items: center;
-  flex-direction: ${(props)=> props.direction || "row"};
+  flex-direction: ${(props) => props.direction || "row"};
   padding: 0;
   max-width: 610px;
   width: 100%;
@@ -14,13 +14,26 @@ export const MenuStyled = styled.ul<MenuPropsType>`
   flex-wrap: ${(props) => props.wrap || "wrap"};
   gap: ${(props) => props.gap || "20px"};
 
+  @media  ${MyTheme.media.landscape} and (orientation: landscape) {
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+   padding-top: 50px;
+    }
+
   a {
     text-decoration: none;
     font-family: ${(props) => props.fontFamily || "DM Sans"};
-    font-weight:  ${(props) => props.weight || 500 };
+    font-weight:  ${(props) => props.weight || 500};
     font-size:  ${(props) => props.fontSize || "20px"};
     line-height:  ${(props) => props.lineH || 1.3};
     color:  ${(props) => props.color || `${MyTheme.colors.light.lightContent}`};
+
+    &:hover,
+    &:focus {
+  color: ${MyTheme.colors.light.hoverMenuItems}
+}
   }
 
   li {

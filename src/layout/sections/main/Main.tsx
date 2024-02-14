@@ -16,8 +16,8 @@ export function Main() {
         <FlexWrapper
           justify="space-around"
           align="center"
-          margin="20vh auto"
-          height="20vh"
+          margin="15vh auto"
+        
         >
           <HelloText>
             Hi 👋,

@@ -8,6 +8,13 @@ export const DesctopNav = styled.div`
   align-items: center;
   height: 60px;
   padding-top: 40px;
+ ul > li {
+  &:hover,
+  &:focus
+   {
+    color: ${MyTheme.colors.light.desctopHoverMenutems}
+  }
+ }
 
   /* position: sticky;
   top:0;
@@ -15,8 +22,8 @@ export const DesctopNav = styled.div`
   right:0;
   z-index: 9; */
 
-  @media ${MyTheme.media.tablet} {
-    display:none;
+  @media ${MyTheme.media.landscape} {
+    display: none;
   }
 
 `;

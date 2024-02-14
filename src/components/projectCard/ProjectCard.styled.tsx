@@ -1,8 +1,14 @@
 import styled from "styled-components";
+import { MyTheme } from "../../styles/Theme.styled";
 
+export const LinkWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`;
 export const ProjectCardStyled = styled.div`
-  max-width: 375px;
-  width: 100%;
+  width: 375px;
+  flex-grow: 1;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
@@ -15,11 +21,27 @@ export const ProjectCardStyled = styled.div`
   }
   > div {
     padding: 30px 30px 25px 30px;
+    
+   
+ ${LinkWrapper}:first-of-type{ &:hover,
+  &:focus {
+ 
+    svg {
+      fill: none;
+      stroke: ${MyTheme.colors.light.solidHeading}
+    }
   }
-  @media screen and (max-width: 876px) {
-    max-width: 500px;
-    width: 100%;
+}
+${LinkWrapper}:last-of-type{ &:hover,
+  &:focus {
+ 
+    svg {
+      fill: ${MyTheme.colors.light.solidHeading};
+      stroke: none
+    }
   }
+}
+}
 `;
 export const CardDscrStyled = styled.p`
   font-family: "Poppins";
@@ -59,9 +81,11 @@ export const ProjectLinkStyled = styled.a`
   line-height: 26px;
   color: #000000;
   text-decoration: underline;
+  &:hover,
+  &:focus {
+    color: ${MyTheme.colors.light.colorsHeading}
+  }
+ 
+  
 `;
-export const LinkWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 5px;
-`;
+

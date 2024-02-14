@@ -15,6 +15,7 @@ direction?: string
 wrap?: string
 gap?: string
 justify?: string
+padding?:string
 }
 
 
@@ -29,6 +30,8 @@ export function Menu(props: MenuPropsType) {
     color={props.color}
     direction={props.direction}
     justify={props.justify}
+    gap={props.gap}
+    padding={props.padding}
 
     >
       <li>

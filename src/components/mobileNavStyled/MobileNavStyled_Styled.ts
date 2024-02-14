@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { MyTheme } from "../../styles/Theme.styled";
+import { Menu } from "../menu/Menu";
 
 export const MobileNav = styled.div<{ isOpen: boolean }>`
   display: flex;
@@ -8,11 +9,13 @@ export const MobileNav = styled.div<{ isOpen: boolean }>`
   justify-content: center;
   gap: 50px;
   position: fixed;
-  background-color: ${MyTheme.colors.light.workAndStudyStatusBorder};
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  background-image: linear-gradient(#13b0f5, #e70faa);
+  border-radius: 2rem;
+  opacity: 0.9;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
   z-index: 2;
   display: none;
 
@@ -20,20 +23,30 @@ export const MobileNav = styled.div<{ isOpen: boolean }>`
     props.isOpen &&
     css<{ isOpen: boolean }>`
       display: flex;
+   
+   
     `}
+   
+  
 `;
 // <isOpen: boolean>
 export const BurgerBtn = styled.button<{ isOpen: boolean }>`
   position: fixed;
   z-index: 9;
-  top: 20px;
-  right: 20px;
+  top: 2rem;
+  right: 2rem;
   width: 64px;
   height: 50px;
   display: none;
   border-radius: 20%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
+
   padding: 0 6px;
+  &:hover,
+  &:focus { 
+      outline: 3px solid  rgba(255, 255, 255, 0.4);
+      background-color:  ${MyTheme.colors.light.hoverOnMenuBtn};
+    }
 
   ${(props) =>
     props.isOpen &&
@@ -51,11 +64,11 @@ export const BurgerBtn = styled.button<{ isOpen: boolean }>`
     position: absolute;
 
     ${(props) =>
-      props.isOpen &&
-      css<{ isOpen: boolean }>`
+    props.isOpen &&
+    css<{ isOpen: boolean }>`
         background-color: rgba(255, 255, 255, 0);
       `};
-      
+   
     &::before {
       content: "";
       display: block;
@@ -69,8 +82,8 @@ export const BurgerBtn = styled.button<{ isOpen: boolean }>`
       transform: translateY(-10px);
 
       ${(props) =>
-        props.isOpen &&
-        css<{ isOpen: boolean }>`
+    props.isOpen &&
+    css<{ isOpen: boolean }>`
           transform: rotate(45deg) translateY(4px) translateX(-4px);
         `}
     }
@@ -87,13 +100,13 @@ export const BurgerBtn = styled.button<{ isOpen: boolean }>`
       transform: translateY(10px);
 
       ${(props) =>
-        props.isOpen &&
-        css<{ isOpen: boolean }>`
+    props.isOpen &&
+    css<{ isOpen: boolean }>`
           transform: rotate(-45deg) translateY(-4px) translateX(-4px);
         `}
     }
   }
-  @media ${MyTheme.media.tablet} {
+  @media ${MyTheme.media.landscape} {
     display: block;
   }
 `;

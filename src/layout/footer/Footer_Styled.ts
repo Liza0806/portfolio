@@ -11,7 +11,13 @@ a {
   line-height: 1.44;
   color: ${MyTheme.colors.light.solidSubTitle};
   white-space: nowrap;
-}
+  
+  &:hover,
+  &:focus {
+   color: ${MyTheme.colors.light.desctopHoverMenutems};
+  
+  }
+ }
 a + a {
   margin-left: 30px;
 }
@@ -22,7 +28,8 @@ a + a {
   }
 
 
-  a { font-size: 16px;}
+  a { font-size: 16px;
+  }
 
   a + a {
   margin-left: 0px;
@@ -32,4 +39,7 @@ a + a {
 export const HrStyled = styled.hr`
   height: 2px;
   background-color:  ${MyTheme.colors.light.lightContent};
+`
+export const StyledSmall = styled.small`
+margin: 0 auto 0 0;
 `

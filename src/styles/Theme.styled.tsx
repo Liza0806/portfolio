@@ -14,7 +14,11 @@ export const MyTheme = {
       workAndStudyStatusBorder: "#EBEAED",
       gradient: "linear-gradient(#13b0f5, #e70faa)",
       gradientStart: "#13b0f5",
-      gradientEnd: "#e70faa"
+      gradientEnd: "#e70faa",
+      hoverOnMenuBtn: '#f2f3f2',
+      hoverMenuItems: "#323232",
+      desctopHoverMenutems: "#202020"
+
 
 
     },
@@ -34,6 +38,7 @@ export const MyTheme = {
    }, 
    media: {
 tablet: "screen and (max-width: 768px)",
-mobile:  "screen and (max-width: 360px)"
+mobile:  "screen and (max-width: 360px)",
+landscape:  "screen and (max-width: 1080px)"
     }
 };

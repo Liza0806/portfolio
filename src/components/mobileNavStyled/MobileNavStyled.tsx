@@ -21,10 +21,13 @@ const onBurgerBtnClick = () => {
           <Menu 
           margin="0 auto" 
           direction="column"
-          fontSize="50px"/>
+          fontSize="50px"
+          padding="0px 20px"
+          color="#fff"
+          />
 
           <IconSet 
-          fill="#666666"
+          fill="#fff"
           width="50px"
           height="50px"
           margin="0"
